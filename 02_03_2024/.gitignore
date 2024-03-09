@@ -1,0 +1,61 @@
+﻿# Pliki tymczasowe
+*.o
+*.obj
+*.tmp
+*.temp
+*.t
+
+# Pliki wykonywalne
+*.exe
+*.out
+*.app
+
+# Pliki budowania
+Debug/
+Release/
+*.ilk
+*.pdb
+*.user
+*.aps
+*.pch
+*.vspscc
+*_i.c
+*_p.c
+*.ncb
+*.suo
+*.sdf
+ipch/
+obj/
+[Bb]in/
+[Dd]ebug*/
+[Rr]elease*/
+*.log
+*.sbr
+*.tlog
+*.userosscache
+
+# Folder specyficzny dla Visual Studio
+.vs/
+
+# Pliki specyficzne dla Visual Studio Code
+.vscode/
+
+# Inne pliki i foldery
+*.log
+*.cache
+*.ilk
+*.mtj.tmp
+*.sublime-workspace
+
+# Nie śledź pliku konfiguracyjnego CMake
+CMakeLists.txt.user
+cmake-build-*/
+
+# Nie śledź plików katalogu .idea używanego przez niektóre IDE JetBrains
+.idea/
+
+# Nie śledź katalogów zawierających pliki generowane przez narzędzia
+GeneratedFiles/
+
+# Nie śledź katalogu z dokumentacją, który może zawierać duże pliki
+docs/
