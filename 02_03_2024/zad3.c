@@ -1,4 +1,4 @@
-#include <stdio.h>
+﻿#include <stdio.h>
 
 // Funkcja do obliczania silni
 long long silnia(int n) {
@@ -8,7 +8,7 @@ long long silnia(int n) {
         return n * silnia(n - 1);
 }
 
-// Funkcja do obliczania silni dla ka?dego elementu tablicy
+// Funkcja do obliczania silni dla każdego elementu tablicy
 void obliczSilnie(int array[], int rozmiar) {
     for (int i = 0; i < rozmiar; i++) {
         printf("Silnia liczby %d wynosi: %lld\n", array[i], silnia(array[i]));
