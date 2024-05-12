@@ -14,7 +14,7 @@ int main() {
     unsigned int liczba;
 
     printf("Podaj liczbe calkowita: ");
-    scanf("%u", &liczba);
+    scanf_s("%u", &liczba);
 
     printf("Silnia z %u wynosi %llu\n", liczba, factorial(liczba));
 

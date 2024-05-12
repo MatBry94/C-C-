@@ -1,6 +1,7 @@
 ﻿#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#include <string.h>
 
 // Definicje dla ruchów
 #define KAMIEN 0
@@ -35,7 +36,7 @@ void showScores(Round rounds[], int numberOfRounds) {
 // Funkcja do przeprowadzenia pojedynczej rundy
 void playRound(Round* round) {
     printf("Wybierz: 0 - kamień, 1 - papier, 2 - nożyce: ");
-    scanf("%d", &round->playerMove);
+    scanf_s("%d", &round->playerMove);
 
     // Losowanie ruchu komputera
     round->computerMove = rand() % 3;
@@ -63,7 +64,7 @@ int main() {
 
     while (1) {
         printf("Wpisz 'play' aby zagrać, 'scores' aby wyświetlić wyniki, 'exit' aby wyjść: ");
-        scanf("%s", command);
+        scanf_s("%s", command);
 
         if (strcmp(command, "play") == 0) {
             if (roundCount < RUNDY) {

@@ -22,7 +22,7 @@ int main() {
     int wysokosc;
 
     printf("Podaj wysokosc trojkata Pascala: ");
-    scanf("%d", &wysokosc);
+    scanf_s("%d", &wysokosc);
 
     trojkatPascala(wysokosc);
 

@@ -18,11 +18,11 @@ void dodaj_kontakt(Contact* ksiazka, int* liczba_kontaktow) {
     }
 
     printf("Podaj imie: ");
-    scanf("%s", ksiazka[*liczba_kontaktow].imie);
+    scanf_s("%s", ksiazka[*liczba_kontaktow].imie);
     printf("Podaj nazwisko: ");
-    scanf("%s", ksiazka[*liczba_kontaktow].nazwisko);
+    scanf_s("%s", ksiazka[*liczba_kontaktow].nazwisko);
     printf("Podaj numer telefonu: ");
-    scanf("%s", ksiazka[*liczba_kontaktow].numer_telefonu);
+    scanf_s("%s", ksiazka[*liczba_kontaktow].numer_telefonu);
 
     (*liczba_kontaktow)++;
 }
@@ -85,7 +85,7 @@ int main() {
         printf("4. Wyswietl wszystkie kontakty\n");
         printf("5. Zakoncz program\n");
 
-        scanf(" %c", &wybor);
+        scanf_s(" %c", &wybor);
 
         switch (wybor) {
         case '1':
@@ -93,12 +93,12 @@ int main() {
             break;
         case '2':
             printf("Podaj nazwisko do wyszukania: ");
-            scanf("%s", nazwisko);
+            scanf_s("%s", nazwisko);
             wyszukaj_kontakt(ksiazka, liczba_kontaktow, nazwisko);
             break;
         case '3':
             printf("Podaj nazwisko do usuniecia: ");
-            scanf("%s", nazwisko);
+            scanf_s("%s", nazwisko);
             usun_kontakt(ksiazka, &liczba_kontaktow, nazwisko);
             break;
         case '4':

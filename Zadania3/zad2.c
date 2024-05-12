@@ -56,9 +56,9 @@ int main() {
     int wiersze, kolumny;
 
     printf("Podaj liczbe wierszy macierzy: ");
-    scanf("%d", &wiersze);
+    scanf_s("%d", &wiersze);
     printf("Podaj liczbe kolumn macierzy: ");
-    scanf("%d", &kolumny);
+    scanf_s("%d", &kolumny);
 
     // Tworzenie macierzy i wypełnienie jej losowymi liczbami
     int** macierz = stworz_macierz(wiersze, kolumny);
