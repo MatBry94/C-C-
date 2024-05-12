@@ -19,7 +19,7 @@ int sumaWielokrotnosci(int limit) {
 int main() {
     int limit;
     printf("Podaj limit: ");
-    scanf_s("%d", &limit);
+    scanf("%d", &limit);
 
     int wynik = sumaWielokrotnosci(limit);
     printf("Suma wielokrotności 3 lub 5 poniżej %d wynosi: %d\n", limit, wynik);

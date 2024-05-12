@@ -15,7 +15,7 @@ int main() {
 
     // Wybór operacji
     printf("Wybierz operacje: + (dodawanie), * (mnozenie), - (odejmowanie): ");
-    scanf_s(" %c", &operacja);
+    scanf(" %c", &operacja);
 
     // Wskazywanie odpowiedniej funkcji przez wskaźnik
     switch (operacja) {
@@ -35,7 +35,7 @@ int main() {
 
     // Pobranie dwóch liczb od użytkownika
     printf("Podaj dwie liczby: ");
-    scanf_s("%d %d", &liczba1, &liczba2);
+    scanf("%d %d", &liczba1, &liczba2);
 
     // Wywołanie odpowiedniej funkcji za pomocą wskaźnika i wyświetlenie wyniku
     printf("Wynik: %d\n", wskaznik(liczba1, liczba2));

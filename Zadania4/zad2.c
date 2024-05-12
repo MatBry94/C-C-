@@ -5,7 +5,7 @@
     // Wprowadzenie 11 wartości do tablicy
     printf("Wprowadz 11 wartosci do tablicy:\n");
     for (int i = 0; i < 11; i++) {
-        scanf_s("%d", &arr[i]);
+        scanf("%d", &arr[i]);
     }
 
     // Sortowanie tablicy
@@ -13,7 +13,7 @@
 
     // Wprowadzenie wartości klucza do wyszukiwania
     printf("Podaj wartosc do znalezienia: ");
-    scanf_s("%d", &key);
+    scanf("%d", &key);
 
     // Wywołanie funkcji wyszukiwania binarnego
     int result = binarySearch(arr, 0, 10, key);

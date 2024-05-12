@@ -36,7 +36,7 @@ void showScores(Round rounds[], int numberOfRounds) {
 // Funkcja do przeprowadzenia pojedynczej rundy
 void playRound(Round* round) {
     printf("Wybierz: 0 - kamień, 1 - papier, 2 - nożyce: ");
-    scanf_s("%d", &round->playerMove);
+    scanf("%d", &round->playerMove);
 
     // Losowanie ruchu komputera
     round->computerMove = rand() % 3;
@@ -64,7 +64,7 @@ int main() {
 
     while (1) {
         printf("Wpisz 'play' aby zagrać, 'scores' aby wyświetlić wyniki, 'exit' aby wyjść: ");
-        scanf_s("%s", command);
+        scanf("%s", command);
 
         if (strcmp(command, "play") == 0) {
             if (roundCount < RUNDY) {
